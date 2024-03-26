@@ -7,6 +7,25 @@
             var name = document.getElementById("email me").value;
             var phone = document.getElementById("ring me").value;
 
+const name = document.getElementById('email me')
+const password = document.getElementById('ring me')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Email is required!!!')
+  }
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (phone.value === '' || name.value == null) {
+    messages.push('Phone is required!!')
+  }
+
+})
+
             
 
             window.alert("your info: " + name + phone);
@@ -23,6 +42,6 @@
         </form>
         <br>
    
-        <a href="page2.html">Weevil?</a> | <a href="page3.html">INFO TIME!</a>
+        <a href="page2.html">Weevil?</a> | <a href="page1.html">Home</a>
     </body>
 </html>
