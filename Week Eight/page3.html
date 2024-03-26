@@ -7,9 +7,38 @@
             var name = document.getElementById("email me").value;
             var phone = document.getElementById("ring me").value;
 
-            
+<script type="text/javascript">
+    function Validate() {
+        var name = document.getElementById('email me');
+        var firstName = name.value.trim();
+        var errors = ""
 
-            window.alert("your info: " + name + phone);
+        if (firstName == "") {
+            errors += "EMAIL PLEASE!.\n";
+            alert(errors);
+            name.focus();
+            return false;
+        }
+    };
+</script>
+
+<script type="text/javascript">
+    function Validate() {
+        var name = document.getElementById('ring me');
+        var digits = phone.value.trim();
+        var errors = ""
+
+        if (digits == "") {
+            errors += "PHONE PLEASE!.\n";
+            alert(errors);
+            phone.focus();
+            return false;
+        }
+    };
+</script>
+    
+
+            window.alert("your info: " + email me + ring me);
         }
         </script>
     <body style="background-color: rgb(56, 154, 56)">
