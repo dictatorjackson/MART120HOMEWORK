@@ -1,0 +1,28 @@
+<html>
+    <title>WAHOOO Info Time!</title>
+    <head>
+        <script>
+        function getData()
+        {
+            var name = document.getElementById("email me").value;
+            var phone = document.getElementById("ring me").value;
+
+            
+
+            window.alert("your info: " + name + phone);
+        }
+        </script>
+    <body style="background-color: rgb(56, 154, 56)">
+        <h3><i class="fa-solid fa-phone"></i>Give me your EMAIL!!!!...and phone number...</h3>
+        <br>
+        <form style="background-color: rgb(106, 42, 218)">
+            <input type="text" value = " " id="email me">email<br>
+            <input type="text" value=" " id="ring me">phone number<br>
+          
+            <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit!!!!</button>
+        </form>
+        <br>
+   
+        <a href="page2.html">Weevil?</a> | <a href="page1.html">Do you love the weevil?</a>
+    </body>
+</html>
